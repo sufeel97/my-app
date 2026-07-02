@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classic Snake</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel">
+        <header class="hud">
+          <div>
+            <p class="label">Score</p>
+            <p id="score" class="value">0</p>
+          </div>
+          <div>
+            <p class="label">Best</p>
+            <p id="best-score" class="value">0</p>
+          </div>
+          <button id="restart-button" class="button" type="button">Restart</button>
+        </header>
+
+        <div class="board-wrap">
+          <div id="status" class="status">Press any arrow key or WASD to start.</div>
+          <div
+            id="board"
+            class="board"
+            role="grid"
+            aria-label="Snake game board"
+          ></div>
+        </div>
+
+        <section class="controls" aria-label="On-screen controls">
+          <button class="button control up" data-direction="up" type="button">Up</button>
+          <button class="button control left" data-direction="left" type="button">Left</button>
+          <button class="button control down" data-direction="down" type="button">Down</button>
+          <button class="button control right" data-direction="right" type="button">Right</button>
+        </section>
+
+        <p class="hint">Arrow keys or WASD. Restart after game over.</p>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+  </html>

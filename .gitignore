@@ -1,0 +1,25 @@
+# OS/editor noise
+.DS_Store
+*.swp
+*.swo
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Generated analyzer outputs
+defect_report.csv
+lot_summary.json
+dashboard.html
+sample_defects/
+defect_analyzer_package/
+defect_analyzer_package.zip

@@ -1,0 +1,56 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run web app",
+      "type": "npm",
+      "script": "dev",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Test Node app",
+      "type": "npm",
+      "script": "test",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Test defect analyzer",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "-m",
+        "unittest",
+        "test_defect_analyzer.py"
+      ],
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Generate defect dashboard",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "defect_analyzer.py",
+        "--generate-sample-data",
+        "sample_defects",
+        "--output",
+        "defect_report.csv",
+        "--summary-json",
+        "lot_summary.json",
+        "--dashboard-html",
+        "dashboard.html"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    }
+  ]
+}

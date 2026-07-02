@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug web server",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/server.js",
+      "env": {
+        "PORT": "3000"
+      },
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Debug defect analyzer tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "unittest",
+      "args": [
+        "test_defect_analyzer.py"
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}

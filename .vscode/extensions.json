@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.debugpy",
+    "dbaeumer.vscode-eslint",
+    "github.vscode-github-actions",
+    "github.vscode-pull-request-github"
+  ]
+}

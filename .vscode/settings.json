@@ -1,0 +1,18 @@
+{
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true
+  },
+  "python.testing.unittestArgs": [
+    "-v",
+    "-s",
+    ".",
+    "-p",
+    "test_defect_analyzer.py"
+  ],
+  "python.testing.unittestEnabled": true,
+  "python.testing.pytestEnabled": false,
+  "typescript.preferences.quoteStyle": "double",
+  "javascript.preferences.quoteStyle": "double"
+}
